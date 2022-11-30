@@ -1,0 +1,6 @@
+@import url(base.css);
+
+nav.navbar {
+    background-color: var(--bg-color-one);
+    color: var(--txt-color);
+}
