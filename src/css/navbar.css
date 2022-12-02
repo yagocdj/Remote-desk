@@ -4,3 +4,7 @@ nav.navbar {
     background-color: var(--bg-color-one);
     color: var(--txt-color);
 }
+
+nav a img.logoBranca{
+    width: 9em;
+}
