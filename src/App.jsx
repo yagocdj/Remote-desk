@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import Navbar from './components/Navbar'
@@ -9,8 +7,8 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
-      <Body></Body>
+      <Navbar />
+      <Body />
     </>
   )
 }

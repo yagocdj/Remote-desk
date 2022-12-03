@@ -1,0 +1,9 @@
+#isotipoBranco{
+    display: flex;
+    justify-self: center;
+}
+
+.div container{
+    display: flex;
+    justify-items: center;
+}
