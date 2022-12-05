@@ -9,9 +9,21 @@ function Body(){
             <div className='d-flex justify-content-center'>
                 <img id='isotipoBranco'src={isoTipo} alt='Logotipo da empresa Novetech'></img>
             </div>
-            <p className='pt-3 fw-light txt-center'>
+            <p className='pt-3 fw-light text-center justify-content-center'>
                 Selecione uma das opções abaixo:
             </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </main>
     )
 }
