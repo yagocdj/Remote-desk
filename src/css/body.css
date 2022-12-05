@@ -1,9 +1,15 @@
-#isotipoBranco{
+/* #isotipoBranco{
     display: flex;
     justify-self: center;
+} */
+
+@import url(base.css);
+
+main {
+    color: var(--txt-color);
 }
 
-.div container{
+/* .div container{
     display: flex;
     justify-items: center;
-}
+} */
