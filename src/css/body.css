@@ -1,7 +1,6 @@
-/* #isotipoBranco{
-    display: flex;
-    justify-self: center;
-} */
+ #isotipoBranco{
+    width: 4rem;
+ }
 
 @import url(base.css);
 
