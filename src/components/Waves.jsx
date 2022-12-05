@@ -3,7 +3,6 @@ import nameSpace from '../assets/namespace/xmls.svg'
 
 function Waves(){
     return(
-            <div className="header">
             <div className="containerWaves">
             <svg className="waves" xmlns={nameSpace} xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
             <defs>
@@ -16,7 +15,6 @@ function Waves(){
             <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
             </svg>
-            </div>
             </div>
         )
 }
