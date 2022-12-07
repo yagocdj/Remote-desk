@@ -1,5 +1,13 @@
 @import url(base.css);
 
+#root{
+    min-width: 100vh;
+}
+
 body{
     background: var(--bg-color-gradient);
+}
+
+footer{
+    position: sticky;
 }
