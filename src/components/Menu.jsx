@@ -1,7 +1,8 @@
 import isoTipo from '../assets/images/isotipo_novetech_branco.png'
 import ButtonMain from './ButtonMain'
-import {FaServer} from "react-icons/fa";
-import {Esus, Server, Atend} from '../assets/images'
+import Esus from '../assets/images/ESUS.png'
+import Server from '../assets/images/server.svg'
+import Atend from '../assets/images/ATEND.png'
 
 function Menu(){
     
@@ -16,9 +17,9 @@ function Menu(){
             </p>    
         </div>
         <div className='d-flex justify-content-center align-items-center flex-column gap-3'>
-            <ButtonMain name='E-SUS PEC' src={Esus}/>
-            <ButtonMain name='ATEND INDICADORES' src={Atend} />
-            <ButtonMain name='SERVIDORES' src={Server}/>
+            <ButtonMain name='E-SUS PEC' sourceImage={Esus} idIcon='Esus' />
+            <ButtonMain name='ATEND INDICADORES' sourceImage={Atend} idIcon='Atend'/>
+            <ButtonMain name='SERVIDORES' sourceImage={Server} idIcon='Server' />
         </div>
         </>
     )
