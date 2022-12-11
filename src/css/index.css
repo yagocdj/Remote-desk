@@ -1,13 +1,6 @@
 @import url(base.css);
 
-#root{
+#root {
     min-width: 100vh;
-}
-
-body{
     background: var(--bg-color-gradient);
-}
-
-footer{
-    position: sticky;
 }
