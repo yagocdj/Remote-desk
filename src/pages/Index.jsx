@@ -2,7 +2,7 @@ import Menu from '../components/Menu';
 import Waves from '../components/Waves'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import '../css/body.css'
+import '../css/index.css'
 
 function Index(){
     return (

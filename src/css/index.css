@@ -1,6 +1,9 @@
 @import url(base.css);
+ 
+ #isotipoBranco {
+    width: 4rem;
+ }
 
-#root {
-    min-width: 100vh;
-    background: var(--bg-color-gradient);
+main {
+    color: var(--txt-color);
 }
