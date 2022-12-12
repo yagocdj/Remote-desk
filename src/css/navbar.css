@@ -3,6 +3,7 @@
 nav.navbar {
     background-color: var(--bg-color-one);
     color: var(--txt-color);
+    height: 10vh;
 }
 
 nav a img.logoBranca{

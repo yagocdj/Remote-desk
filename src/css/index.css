@@ -1,9 +1,24 @@
 @import url(base.css);
- 
- #isotipoBranco {
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#isotipoBranco {
     width: 4rem;
  }
 
 main {
     color: var(--txt-color);
+}
+
+footer {
+    margin-top: auto;
+    height: auto;
+}
+
+nav {
+    height: 10vh;
 }
