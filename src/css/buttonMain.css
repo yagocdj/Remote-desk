@@ -2,8 +2,8 @@
 
 .buttonMain {
     display: flex;
-    min-width: 16em;
-    max-width: 16em;
+    min-width: 20em;
+    max-width: 20em;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -57,6 +57,6 @@
 }
 
 
-.logoButton{
+.logoButton {
     width: 2em;
 }

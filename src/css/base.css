@@ -7,6 +7,20 @@
 }
 
 body {
-    /* min-height: 100vh; */
     background-image: var(--bg-color-gradient);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    height: auto;
+}
+
+nav {
+    height: 10vh;
 }

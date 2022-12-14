@@ -1,9 +1,9 @@
-import '../css/buttonMain.css'
+import '../css/buttonMain.css';
 import {FaExternalLinkAlt} from "react-icons/fa";
 
 
-function ButtonMain({name, sourceImage, idIcon}){
-    return(
+function ButtonMain({name, sourceImage, idIcon}) {
+    return (
         <button className="buttonMain">
             <img className='logoButton' src={sourceImage} id={idIcon}/>
             <span className="label text-dark">{name}</span>
@@ -11,7 +11,7 @@ function ButtonMain({name, sourceImage, idIcon}){
                 <FaExternalLinkAlt />
             </span>
         </button>
-    )
+    );
 }
 
-export default ButtonMain
+export default ButtonMain;
