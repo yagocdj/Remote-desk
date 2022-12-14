@@ -14,7 +14,7 @@ import Esus from '../assets/images/ESUS.png';
 import Server from '../assets/images/server.svg';
 import Atend from '../assets/images/ATEND.png';
 
-function Index() {
+export default function Index() {
     return (
         <>
             <main className='container d-flex justify-content-center flex-column pt-5 gap-2'>
@@ -28,7 +28,7 @@ function Index() {
                 </div>
                 <div className='d-flex justify-content-center align-items-center flex-column gap-3'>
                     { /* Colocar um alt nas imgs dos buttons */ }
-                    <ButtonMain name='E-SUS PEC' sourceImage={Esus} idIcon='Esus' />
+                    <ButtonMain name='E-SUS PEC' sourceImage={Esus} idIcon='Esus' route='states' />
                     <ButtonMain name='ATEND INDICADORES' sourceImage={Atend} idIcon='Atend'/>
                     <ButtonMain name='SERVIDORES' sourceImage={Server} idIcon='Server' />
                 </div>
@@ -36,5 +36,3 @@ function Index() {
         </>
     );
 }
-
-export default Index;

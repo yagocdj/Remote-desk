@@ -14,7 +14,7 @@
     background: var(--bg-button-color);
     text-transform: uppercase;
     overflow: hidden;
-    border-radius: 5px
+    border-radius: 5px;
 }
    
 .buttonMain::before {

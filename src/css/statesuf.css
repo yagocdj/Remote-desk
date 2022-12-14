@@ -1,0 +1,13 @@
+@import url('base.css');
+
+/* a partir de 625px -> 2 cards por linha */
+
+@media screen and (min-width: 625px) {
+    #card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+
+}

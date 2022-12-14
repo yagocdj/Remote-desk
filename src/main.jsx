@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+// Components and pages
 import App from './App';
 import Index from './pages/Index';
+import StatesUf from './pages/StatesUf';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Index />
+      },
+      {
+        path: "states",
+        element: <StatesUf />
       }
     ]
   },
