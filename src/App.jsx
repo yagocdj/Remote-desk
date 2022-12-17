@@ -1,25 +1,25 @@
+// Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+
+// Components
 import Waves from './components/Waves'
-import Index from './pages/Index';
-import { Outlet } from 'react-router-dom';
-import './css/navbar.css';
-import './css/index.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import Logo from './assets/images/novetech_logo_branco.png';
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
+
+// Pages
+import Index from './pages/Index';
+
+// CSS and assets
+import './css/index.css';
 
 function App() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <a className="navbar-brand text-light" href="#">
-              <img className='logoBranca' src={Logo}></img>
-          </a>
-          <GiHamburgerMenu size={25} />
-        </div>
-      </nav>
+      {/* Navbar */}
+      <Navbar />
       
       {/* index */}
       <Outlet />

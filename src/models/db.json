@@ -1,0 +1,22 @@
+{
+    "stateFlags": [
+        {
+            "id": 1,
+            "name": "Acre",
+            "abbreviation": "AC",
+            "flag": "../assets/images/stateFlags/Bandeira_do_Acre.svg"
+        },
+        {
+            "id": 2,
+            "name": "Alagoas",
+            "abbreviation": "AL",
+            "flag": "../assets/images/stateFlags/Bandeira_de_Alagoas.svg"
+        },
+        {
+            "id": 3,
+            "name": "Paraíba",
+            "abbreviation": "PB",
+            "flag": "../assets/images/stateFlags/Bandeira_da_Paraiba.svg"
+        }
+    ]
+}
