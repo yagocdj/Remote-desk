@@ -2,12 +2,21 @@
 
 /* a partir de 625px -> 2 cards por linha */
 
+main {
+    max-width: 1280px;
+}
+
+#cards-container {
+    width: 50em;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 625px) {
-    #card-container {
+    #cards-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1em;
+        column-gap: 3em;
     }
-
-
 }

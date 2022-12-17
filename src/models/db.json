@@ -4,19 +4,22 @@
             "id": 1,
             "name": "Acre",
             "abbreviation": "AC",
-            "flag": "../assets/images/stateFlags/Bandeira_do_Acre.svg"
+            "image": "./src/assets/images/stateFlags/Bandeira_do_Acre.svg",
+            "alternative": "Bandeira do estado do Acre"
         },
         {
             "id": 2,
             "name": "Alagoas",
             "abbreviation": "AL",
-            "flag": "../assets/images/stateFlags/Bandeira_de_Alagoas.svg"
+            "image": "./src/assets/images/stateFlags/Bandeira_de_Alagoas.svg",
+            "alternative": "Bandeira do estado de Alagoas"
         },
         {
             "id": 3,
             "name": "Paraíba",
             "abbreviation": "PB",
-            "flag": "../assets/images/stateFlags/Bandeira_da_Paraiba.svg"
+            "image": "./src/assets/images/stateFlags/Bandeira_da_Paraiba.svg",
+            "alternative": "Bandeira do estado da Paraíba"
         }
     ]
 }

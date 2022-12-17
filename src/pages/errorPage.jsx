@@ -1,7 +1,7 @@
 
 import { useRouteError } from "react-router-dom";
-import { GiHamburgerMenu } from 'react-icons/gi';
-import Waves from "../components/Waves"
+import Waves from "../components/Waves";
+import Navbar from "../components/Navbar";
 
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,14 +19,7 @@ export default function ErrorPage() {
   return (
 
     <>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <a className="navbar-brand text-light" href="#">
-              <img className='logoBranca' src={Logo}></img>
-          </a>
-          <GiHamburgerMenu size={25} />
-        </div>
-      </nav>
+      <Navbar />
 
       <main className="container d-flex justify-content-center">
         <div id="error-page" className="text-center align-self-center">
