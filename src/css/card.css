@@ -1,8 +1,11 @@
 @import url('./base.css');
 
 .flag-image {
-    max-width: 15em;
-    max-height: 15em;
+    max-width: 240px;
+    max-height: 160px;
+
+    width: 240px;
+    height: 160px;
 }
 
 /* Glassmorphism card effect */

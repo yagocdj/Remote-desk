@@ -9,7 +9,6 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 // CSS and assets
 import '../css/navbar.css';
-import Logo from '../assets/images/novetech_logo_branco.png';
 import '../css/error.css';
 
 export default function ErrorPage() {

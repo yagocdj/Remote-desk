@@ -31,8 +31,4 @@ function App() {
   );
 }
 
-
-/* Possível caso de json-server -> imagens dos buttons
-(talvez até um state)
-*/
 export default App
