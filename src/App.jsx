@@ -23,10 +23,6 @@ function App() {
       
       {/* index */}
       <Outlet />
-
-      <footer>
-        <Waves />
-      </footer>
     </>
   );
 }
