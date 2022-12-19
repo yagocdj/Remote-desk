@@ -7,7 +7,14 @@ import { TextField } from '@mui/material';
 
 export default function StatesUf() {
 
-    const [flags, setFlags] = useState([])
+    const [flags, setFlags] = useState([]);
+    const [inputText, setInputText] = useState("");
+
+    let inputHandler = (text) => {
+        // convert input text to lower case
+        let lowerCase = text.target.value.toLowerCase();
+        setInputText(lowerCase);
+    }
 
     useEffect(() => {
         fetch('http://localhost:3000/stateFlags')
@@ -15,28 +22,30 @@ export default function StatesUf() {
         .then((flags) => setFlags(flags))}, []);
 
     return (
-    <>
-        <div id='search-bar-container' className='d-flex justify-content-center py-4'>
-            <div className='search'>
-                <TextField
-                id='outlined-basic'
-                variant='outlined'
-                fullWidth
-                label='Nome do estado'
-                />
+        <>
+            <div id='search-bar-container' className='d-flex justify-content-center py-4'>
+                <div className='search'>
+                    <TextField
+                    id='outlined-basic-error-helper'
+                    onChange={inputHandler}
+                    variant='outlined'
+                    fullWidth
+                    label='Nome do estado'
+                    />
+                </div>
             </div>
-        </div>
-        <main id='cards-container' className='px-4 align-self-center'>
-            {flags.map((flag) => (
-                <Card 
-                id={flag.id}
-                image={flag.image}
-                stateName={flag.name}
-                abbreviation={flag.abbreviation}
-                altText={flag.alternative}
-                />
-            ))}
-        </main>
-    </>
+            
+            <main id='cards-container' className='px-4 align-self-center'>
+                {flags.map((flag) => (
+                    <Card 
+                    id={flag.id}
+                    image={flag.image}
+                    stateName={flag.name}
+                    abbreviation={flag.abbreviation}
+                    altText={flag.alternative}
+                    />
+                ))}
+            </main>
+        </>
     );
 }
