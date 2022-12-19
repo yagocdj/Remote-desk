@@ -1,18 +1,28 @@
 import '../css/card.css';
 import '../css/statesuf.css';
 import { useState } from 'react';
-import { TextField } from '@mui/material';
+import { FormControl, TextField } from '@mui/material';
 import CardsList from '../components/CardsList';
+import { useFormControlUnstyledContext } from '@mui/base';
 
 
 export default function StatesUf() {
     
     const [inputText, setInputText] = useState("");
 
+    const pattern = /^[a-zA-Z\s]*$/;
+    
     let inputHandler = (text) => {
         // convert input text to lower case
         let lowerCase = text.target.value.toLowerCase();
         setInputText(lowerCase);
+    }
+
+    const isValidChar = (char) => {
+        if (pattern.test(inputText) || inputText === '') {
+            return true;
+        }
+        return false;
     }
 
     return (
@@ -26,6 +36,7 @@ export default function StatesUf() {
                     fullWidth
                     label='Digite o Estado ou UF aqui'
                     />
+                    <span>{isValidChar()? '' : 'Digite apenas letras'}</span>
                 </div>
             </div>
             
