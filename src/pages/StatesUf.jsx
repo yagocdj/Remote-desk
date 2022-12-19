@@ -1,13 +1,12 @@
-import Card from '../components/Card';
 import '../css/card.css';
 import '../css/statesuf.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { TextField } from '@mui/material';
+import CardsList from '../components/CardsList';
 
 
 export default function StatesUf() {
-
-    const [flags, setFlags] = useState([]);
+    
     const [inputText, setInputText] = useState("");
 
     let inputHandler = (text) => {
@@ -15,11 +14,6 @@ export default function StatesUf() {
         let lowerCase = text.target.value.toLowerCase();
         setInputText(lowerCase);
     }
-
-    useEffect(() => {
-        fetch('http://localhost:3000/stateFlags')
-        .then((answer) => answer.json())
-        .then((flags) => setFlags(flags))}, []);
 
     return (
         <>
@@ -36,15 +30,7 @@ export default function StatesUf() {
             </div>
             
             <main id='cards-container' className='px-4 align-self-center'>
-                {flags.map((flag) => (
-                    <Card 
-                    id={flag.id}
-                    image={flag.image}
-                    stateName={flag.name}
-                    abbreviation={flag.abbreviation}
-                    altText={flag.alternative}
-                    />
-                ))}
+                <CardsList input={inputText}/>
             </main>
         </>
     );
