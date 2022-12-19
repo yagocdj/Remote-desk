@@ -1,8 +1,9 @@
-import '../css/waves.css'
-import nameSpace from '../assets/namespace/xmls.svg'
+import '../css/waves.css';
+import nameSpace from '../assets/namespace/xmls.svg';
 
-function Waves(){
-    return(
+function Waves() {
+    
+    return (
             <div className="containerWaves">
             <svg className="waves" xmlns={nameSpace} xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
             <defs>
@@ -16,7 +17,7 @@ function Waves(){
             </g>
             </svg>
             </div>
-        )
+        );
 }
 
-export default Waves
+export default Waves;
