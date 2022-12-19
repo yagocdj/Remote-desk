@@ -2,6 +2,7 @@ import Card from '../components/Card';
 import '../css/card.css';
 import '../css/statesuf.css';
 import { useEffect, useState } from 'react';
+import { TextField } from '@mui/material';
 
 
 export default function StatesUf() {
@@ -15,6 +16,16 @@ export default function StatesUf() {
 
     return (
     <>
+        <div id='search-bar-container' className='d-flex justify-content-center py-4'>
+            <div className='search'>
+                <TextField
+                id='outlined-basic'
+                variant='outlined'
+                fullWidth
+                label='Nome do estado'
+                />
+            </div>
+        </div>
         <main id='cards-container' className='px-4 align-self-center'>
             {flags.map((flag) => (
                 <Card 
