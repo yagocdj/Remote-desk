@@ -29,10 +29,6 @@ export default function ErrorPage() {
           </p>
         </div>
       </main>
-
-      <footer>
-        <Waves />
-      </footer>
     </>
   );
 }
