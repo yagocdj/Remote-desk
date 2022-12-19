@@ -23,14 +23,14 @@ export default function StatesUf() {
 
     return (
         <>
-            <div id='search-bar-container' className='d-flex justify-content-center py-4'>
+            <div id='search-bar-container' className='d-flex justify-content-center py-4 text-dark'>
                 <div className='search'>
                     <TextField
                     id='outlined-basic-error-helper'
                     onChange={inputHandler}
-                    variant='outlined'
+                    variant='filled'
                     fullWidth
-                    label='Nome do estado'
+                    label='Digite o Estado ou UF aqui'
                     />
                 </div>
             </div>
