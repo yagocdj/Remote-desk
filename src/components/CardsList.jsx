@@ -6,7 +6,7 @@ export default function CardsList(props) {
     const [flags, setFlags] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/stateFlags')
+        fetch('http://10.0.4.154:3000/stateFlags')
         .then((answer) => answer.json())
         .then((flags) => setFlags(flags))}, []);
 
