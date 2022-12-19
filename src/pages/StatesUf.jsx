@@ -35,7 +35,7 @@ export default function StatesUf() {
                     fullWidth
                     label='Digite o Estado ou UF aqui'
                     />
-                    <span>{isValidChar()? '' : 'Digite apenas letras'}</span>
+                    <span>{isValidChar()? '' : 'Digite apenas letras.'}</span>
                 </div>
             </div>
             
