@@ -35,7 +35,7 @@ export default function StatesUf() {
                 </div>
             </div>
             
-            <main id='cards-container' className='px-4 align-self-center'>
+            <main id='cards-container' className='px-4 align-self-center mb-4'>
                 {flags.map((flag) => (
                     <Card 
                     id={flag.id}
