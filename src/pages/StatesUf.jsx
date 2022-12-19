@@ -1,9 +1,8 @@
 import '../css/card.css';
 import '../css/statesuf.css';
 import { useState } from 'react';
-import { FormControl, TextField } from '@mui/material';
+import { TextField } from '@mui/material';
 import CardsList from '../components/CardsList';
-import { useFormControlUnstyledContext } from '@mui/base';
 
 
 export default function StatesUf() {
