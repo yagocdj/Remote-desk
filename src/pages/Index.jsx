@@ -27,7 +27,6 @@ export default function Index() {
                     </p>    
                 </div>
                 <div className='d-flex justify-content-center align-items-center flex-column gap-3'>
-                    { /* Colocar um alt nas imgs dos buttons */ }
                     <ButtonMain name='E-SUS PEC' sourceImage={Esus} idIcon='Esus' route='states' altText='Logo do serviço E-SUS PEC'/>
                     <ButtonMain name='ATEND INDICADORES' sourceImage={Atend} idIcon='Atend' altText='Logo da empresa Novetech em vermelho'/>
                     <ButtonMain name='SERVIDORES' sourceImage={Server} idIcon='Server' altText='Ícone de um servidor'/>
